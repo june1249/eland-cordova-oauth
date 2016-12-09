@@ -1,3 +1,6 @@
-0.2.8 -
+v1.1 -
 
 * Add Eland oauth
+
+v1.0 - 
+* First release
