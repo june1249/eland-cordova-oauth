@@ -461,7 +461,7 @@
               redirect_uri = options.redirect_uri;
             }
           }
-          var flowUrl = "https://auth-dev.eland.co.kr/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&scope=" + appScope.join(",");
+          var flowUrl = "http://121.190.89.43/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&scope=" + appScope.join(",");
           // var flowUrl = "http://10.252.226.242/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&scope=" + appScope.join(",");
           console.log('eland-Url: ' + flowUrl);
           if(options !== undefined && options.hasOwnProperty("auth_type")) {
@@ -1127,7 +1127,7 @@
       adfs: $ngCordovaAdfs.signin,
       dropbox: $ngCordovaDropbox.signin,
       digitalOcean: $ngCordovaDigitalOcean.signin,
-      eland: $ngCordovaEland.singin,
+      eland: $ngCordovaEland.signin,
       google: $ngCordovaGoogle.signin,
       github: $ngCordovaGithub.signin,
       facebook: $ngCordovaFacebook.signin,
