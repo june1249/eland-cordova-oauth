@@ -29,7 +29,7 @@ injection 후 부터 eland-cordova-oauth를 사용할 수 있습니다.
 
 
 ```javascript
-$cordovaOauth.eland("CLIENT_ID_HERE", ["email","userName"]).then(function(result) {
+$cordovaOauth.eland("CLIENT_ID_HERE", "MODE"(i.e. dev or prd), "SERVICE_URI", ["email","userName"]).then(function(result) {
     console.log("Response Object -> " + JSON.stringify(result));
 }, function(error) {
     console.log("Error -> " + error);
