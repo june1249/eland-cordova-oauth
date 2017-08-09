@@ -25,11 +25,11 @@
               redirect_uri = options.redirect_uri;
             }
           }
-          var flowUrl = "http://oauth2.eland.co.kr/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&service_uri" + serviceUri + "&scope=" + appScope.join(",");
+          var flowUrl = "http://oauth2.eland.co.kr/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&service_uri=" + serviceUri + "&scope=" + appScope.join(",");
           if (mode == 'dev') {
-            flowUrl = "http://oauth2.eland.co.kr:8080/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&service_uri" + serviceUri + "&scope=" + appScope.join(",");
+            flowUrl = "http://oauth2.eland.co.kr:8080/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&service_uri=" + serviceUri + "&scope=" + appScope.join(",");
           }
-          
+
           // var flowUrl = "http://10.252.226.242/#/login?client_id=" + appId + "&redirect_uri=" + redirect_uri + "&responseType=code&scope=" + appScope.join(",");
           console.log('eland-Url: ' + flowUrl);
           if(options !== undefined && options.hasOwnProperty("auth_type")) {
